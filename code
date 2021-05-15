@@ -1,0 +1,84 @@
+import pyttsx3
+friend = pyttsx3.init()
+
+friend.say("what do you want to do? Want to talk?, Want to play game?, come here to see how it work?, I don't know?, Enter your choice?, Hmmmmmm? " )
+
+
+print("what do you want to do?")
+print("1 Want to talk ")
+print("2 Want to play game ")
+print("3 come here to see how it work")
+print("4 I don't know")
+friend.runAndWait()
+
+
+
+choice= int(input("Enter your choice: "))
+
+if choice == 4:
+    friend.say("Hmmmmm?, so you don't know why you come here?, Go and fuck yourself?, Now go?")
+    friend.runAndWait()
+    print("Go and fuck yourself")
+    print("now go")
+    
+
+if choice == 3:
+    friend.say("Oky?, you not need to worry just close the application and shutdown this computer thats it! ok bye?")
+    print("Oky you not need to worry just close the application and shutdown this computer thats it! ")
+    print("Ok bye")
+    friend.runAndWait()
+
+if choice == 2:
+    friend.say("which type of game do you want to play?, enter 5?,for PUB-G?, enter 6?,for free fire?, enter your choice?, hmmmm?")
+    print("which type of game do you want to play ")
+    print("5- pubg")
+    print("6- free fire ")
+    friend.runAndWait()
+    choice= int(input("Enter your choice: "))
+    
+
+    if choice ==5:
+        friend.say("sorry this game is banned in india so you can't play this game?, Now bye")
+        print("sorry this game is banned in india so you can't play this game ")
+        print("Ok bye")
+        friend.runAndWait()
+
+    if choice ==6:
+        friend.say("just go on the play store and download this game after that you can play this game?, Now bye")
+        print("just go on the play store and download this game after that you can play this game!")
+        print("Ok bye")
+        friend.runAndWait()
+
+if choice == 1:
+    friend.say("hello! how are you")
+    print("Assistant: hello! how are you ")
+    friend.runAndWait()
+    speech = input("you: ")
+
+
+    friend.say("hey there?, my name is jarvis! what is your name")
+    print("Assistant: My name is jarvis ! what is your name")
+    friend.runAndWait()
+    speech = input("you: ")
+
+    friend.say("wow?, what a cool name! you want any help?")
+    print("Assistant: wow what a cool name! you want any help ? ")
+    friend.runAndWait()
+    speech = input("you: ")
+
+    friend.say("if you want any help then you can contact with my brother google?, he will suerly help you?")
+    print("Assistant:if you want any help then you can contact with my brother google he will suerly help you?")
+    friend.runAndWait()
+    speech = input("You: ")
+
+    friend.say("now i am getting bored! So bye?")
+    print("Assistant: now i am getting bored! So bye ")
+    friend.runAndWait()
+
+
+else:
+    friend.say("Wrong input!")
+    friend.runAndWait()
+    print("Wrong input.......!")
+
+
